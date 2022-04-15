@@ -42,20 +42,34 @@ public struct Money {
         
         let rn = Currency(rawValue: currency.self)
         var afterChange = amount
+        
+        guard afterChange > 0 else {
+            print("The amount is illegal, double check the amount")
+            return self
+        }
+        
         if currency == "USD" {
             afterChange = (afterChange * (Int(toCurr.rate() * 100))) / 100
         } else {
             afterChange = (100 * amount) / Int(rn!.rate() * 100)
-            print(afterChange)
         }
         return Money(amount: afterChange, currency: args)
     }
     
     func add(_ args: Money) -> Money {
+        guard Currency(rawValue: args.currency) != nil else {
+            print("This currency is not in the bank")
+            return self
+        }
+        
+        guard args.amount > 0 && amount > 0 else {
+            print("The amount is illegal, double check the amount")
+            return self
+        }
+                
         var sum: Int = 0
         let afterConvert = self.convert(args.currency)
         sum = sum + afterConvert.amount + args.amount
-        print(sum)
         return Money(amount: sum, currency: args.currency)
     }
     
@@ -78,10 +92,16 @@ public class Job {
         case Salary(UInt)
     }
     
-    func calculateIncome(_ time: Int) -> Int {
+    
+    func calculateIncome(_ time: Int) -> Int {        
         switch type {
         case .Hourly(let double):
-            return Int(double) * time
+            if (double >= 0) {
+                return Int(double) * time
+            } else {
+                print("Illegal salary")
+                return 0
+            }
         case .Salary(let uInt):
             return Int(uInt)
         }
@@ -105,6 +125,18 @@ public class Job {
         }
     }
     
+    // EC Convert hourly to salary and salary to hourly
+    func convert() -> Job {
+        switch type {
+            case .Hourly(let double):
+                type = .Salary(UInt(double) * 2000)
+            case .Salary(let uInt):
+                type = .Hourly(Double(uInt) / 2000)
+        }
+
+        return Job(title: self.title, type: self.type)
+    }
+    
 }
 
 ////////////////////////////////////
@@ -117,9 +149,9 @@ public class Person {
     var jobStr : Job? = nil
     var spouseStr : Person? = nil
     
-    init(firstName : String, lastName: String, age : Int) {
-        self.firstName = firstName
-        self.lastName = lastName
+    init(firstName : String? = nil, lastName : String? = nil, age : Int) {
+        self.firstName = firstName ?? ""
+        self.lastName = lastName ?? ""
         self.age = age
     }
     
@@ -155,6 +187,51 @@ public class Person {
     
 }
 
+//public class Person {
+//    var firstName : String = ""
+//    var lastName : String = ""
+//    var age : Int = 0
+//    var jobStr : Job? = nil
+//    var spouseStr : Person? = nil
+//
+//    init(firstName : String, lastName: String, age : Int) {
+//        self.firstName = firstName
+//        self.lastName = lastName
+//        self.age = age
+//    }
+//
+//    func toString() -> String {
+//        return "[Person: firstName:\(firstName) lastName:\(lastName) age:\(age) job:\(jobStr?.title ?? "nil") spouse:\(spouseStr?.firstName ?? "nil")]"
+//    }
+//
+//    var job: Job? {
+//        get {
+//            return jobStr
+//        }
+//        set(newTitle) {
+//            if age < 16 {
+//                jobStr = nil
+//            } else {
+//                jobStr = newTitle
+//            }
+//        }
+//    }
+//
+//    var spouse: Person? {
+//        get {
+//            return spouseStr
+//        }
+//        set(newName) {
+//            if age < 16 {
+//                spouseStr = nil
+//            } else {
+//                spouseStr = newName
+//            }
+//        }
+//    }
+//
+//}
+
 ////////////////////////////////////
 // Family
 //
@@ -168,6 +245,11 @@ public class Family {
             members = [spouse1, spouse2]
         } else {
             print("Not a family!")
+            if spouse1.spouse == nil && spouse2.spouse != nil {
+                members = [spouse2]
+            } else if spouse1.spouse != nil && spouse2.spouse == nil {
+                members = [spouse1]
+            }
         }
     }
 
