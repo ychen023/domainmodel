@@ -151,7 +151,8 @@ class MoneyTests: XCTestCase {
         ("testAddUSDtoYuan", testAddUSDtoYuan),
         ("testConvertNeg", testConvertNeg),
         ("testAddNeg", testAddNeg),
-        ("testNegAdd", testNegAdd)
+        ("testNegAdd", testNegAdd),
+        ("testUSDtoYuantoUSD", testUSDtoYuantoUSD)
     ]
 }
 

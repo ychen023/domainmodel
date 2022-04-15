@@ -1,6 +1,6 @@
 version: "Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)"
 options: "8f91f5c080ee05dfa082fbbdc06113a444cc9a4781f02ab54a8aa8fd08142ceb"
-build_start_time: [1649933256, 350083827]
-build_end_time: [1649933258, 710566997]
+build_start_time: [1650002381, 187055110]
+build_end_time: [1650002383, 52845001]
 inputs:
-  "/Users/yilinchen/Desktop/domainmodel/Sources/DomainModel/DomainModel.swift": [1649933205, 836365222]
+  "/Users/yilinchen/Desktop/domainmodel/Sources/DomainModel/DomainModel.swift": [1650002325, 827681064]

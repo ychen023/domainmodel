@@ -1077,6 +1077,28 @@
           "moduleName": "DomainModel",
           "isOpen": true,
           "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "convert",
+          "printedName": "convert()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Job",
+              "printedName": "DomainModel.Job",
+              "usr": "s:11DomainModel3JobC"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:11DomainModel3JobC7convertACyF",
+          "mangledName": "$s11DomainModel3JobC7convertACyF",
+          "moduleName": "DomainModel",
+          "isOpen": true,
+          "declAttributes": [
+            "RawDocComment"
+          ],
+          "funcSelfKind": "NonMutating"
         }
       ],
       "declKind": "Class",
@@ -1651,15 +1673,33 @@
             },
             {
               "kind": "TypeNominal",
-              "name": "String",
-              "printedName": "Swift.String",
-              "usr": "s:SS"
+              "name": "Optional",
+              "printedName": "Swift.String?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "hasDefaultArg": true,
+              "usr": "s:Sq"
             },
             {
               "kind": "TypeNominal",
-              "name": "String",
-              "printedName": "Swift.String",
-              "usr": "s:SS"
+              "name": "Optional",
+              "printedName": "Swift.String?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "hasDefaultArg": true,
+              "usr": "s:Sq"
             },
             {
               "kind": "TypeNominal",
@@ -1669,8 +1709,8 @@
             }
           ],
           "declKind": "Constructor",
-          "usr": "s:11DomainModel6PersonC9firstName04lastE03ageACSS_SSSitcfc",
-          "mangledName": "$s11DomainModel6PersonC9firstName04lastE03ageACSS_SSSitcfc",
+          "usr": "s:11DomainModel6PersonC9firstName04lastE03ageACSSSg_AGSitcfc",
+          "mangledName": "$s11DomainModel6PersonC9firstName04lastE03ageACSSSg_AGSitcfc",
           "moduleName": "DomainModel",
           "init_kind": "Designated"
         },

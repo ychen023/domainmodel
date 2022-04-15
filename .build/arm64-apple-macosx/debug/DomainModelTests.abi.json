@@ -491,6 +491,50 @@
         },
         {
           "kind": "Function",
+          "name": "testNegHourlySalary",
+          "printedName": "testNegHourlySalary()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "c:@M@DomainModelTests@objc(cs)JobTests(im)testNegHourlySalary",
+          "mangledName": "$s16DomainModelTests03JobC0C19testNegHourlySalaryyyF",
+          "moduleName": "DomainModelTests",
+          "isOpen": true,
+          "declAttributes": [
+            "RawDocComment",
+            "ObjC"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "test0Salary",
+          "printedName": "test0Salary()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "c:@M@DomainModelTests@objc(cs)JobTests(im)test0Salary",
+          "mangledName": "$s16DomainModelTests03JobC0C11test0SalaryyyF",
+          "moduleName": "DomainModelTests",
+          "isOpen": true,
+          "declAttributes": [
+            "RawDocComment",
+            "ObjC"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
           "name": "testCreateHourlyJob",
           "printedName": "testCreateHourlyJob()",
           "children": [
@@ -506,6 +550,50 @@
           "moduleName": "DomainModelTests",
           "isOpen": true,
           "declAttributes": [
+            "ObjC"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "testConvert",
+          "printedName": "testConvert()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "c:@M@DomainModelTests@objc(cs)JobTests(im)testConvert",
+          "mangledName": "$s16DomainModelTests03JobC0C11testConvertyyF",
+          "moduleName": "DomainModelTests",
+          "isOpen": true,
+          "declAttributes": [
+            "RawDocComment",
+            "ObjC"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "testConvert2",
+          "printedName": "testConvert2()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "c:@M@DomainModelTests@objc(cs)JobTests(im)testConvert2",
+          "mangledName": "$s16DomainModelTests03JobC0C12testConvert2yyF",
+          "moduleName": "DomainModelTests",
+          "isOpen": true,
+          "declAttributes": [
+            "RawDocComment",
             "ObjC"
           ],
           "funcSelfKind": "NonMutating"
@@ -548,7 +636,6 @@
           "moduleName": "DomainModelTests",
           "isOpen": true,
           "declAttributes": [
-            "RawDocComment",
             "ObjC"
           ],
           "funcSelfKind": "NonMutating"
@@ -1221,6 +1308,104 @@
           ]
         },
         {
+          "kind": "Var",
+          "name": "tenYuan",
+          "printedName": "tenYuan",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Money",
+              "printedName": "DomainModel.Money",
+              "usr": "s:11DomainModel5MoneyV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:16DomainModelTests05MoneyC0C7tenYuan0aB00D0Vvp",
+          "mangledName": "$s16DomainModelTests05MoneyC0C7tenYuan0aB00D0Vvp",
+          "moduleName": "DomainModelTests",
+          "declAttributes": [
+            "HasInitialValue",
+            "Final",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 5,
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Money",
+                  "printedName": "DomainModel.Money",
+                  "usr": "s:11DomainModel5MoneyV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:16DomainModelTests05MoneyC0C7tenYuan0aB00D0Vvg",
+              "mangledName": "$s16DomainModelTests05MoneyC0C7tenYuan0aB00D0Vvg",
+              "moduleName": "DomainModelTests",
+              "implicit": true,
+              "declAttributes": [
+                "Final"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "negEUR",
+          "printedName": "negEUR",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Money",
+              "printedName": "DomainModel.Money",
+              "usr": "s:11DomainModel5MoneyV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:16DomainModelTests05MoneyC0C6negEUR0aB00D0Vvp",
+          "mangledName": "$s16DomainModelTests05MoneyC0C6negEUR0aB00D0Vvp",
+          "moduleName": "DomainModelTests",
+          "declAttributes": [
+            "HasInitialValue",
+            "Final",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 6,
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Money",
+                  "printedName": "DomainModel.Money",
+                  "usr": "s:11DomainModel5MoneyV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:16DomainModelTests05MoneyC0C6negEUR0aB00D0Vvg",
+              "mangledName": "$s16DomainModelTests05MoneyC0C6negEUR0aB00D0Vvg",
+              "moduleName": "DomainModelTests",
+              "implicit": true,
+              "declAttributes": [
+                "Final"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
           "kind": "Function",
           "name": "testCanICreateMoney",
           "printedName": "testCanICreateMoney()",
@@ -1468,6 +1653,138 @@
           "moduleName": "DomainModelTests",
           "isOpen": true,
           "declAttributes": [
+            "ObjC"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "testUSDtoYuan",
+          "printedName": "testUSDtoYuan()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "c:@M@DomainModelTests@objc(cs)MoneyTests(im)testUSDtoYuan",
+          "mangledName": "$s16DomainModelTests05MoneyC0C13testUSDtoYuanyyF",
+          "moduleName": "DomainModelTests",
+          "isOpen": true,
+          "declAttributes": [
+            "RawDocComment",
+            "ObjC"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "testAddUSDtoYuan",
+          "printedName": "testAddUSDtoYuan()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "c:@M@DomainModelTests@objc(cs)MoneyTests(im)testAddUSDtoYuan",
+          "mangledName": "$s16DomainModelTests05MoneyC0C16testAddUSDtoYuanyyF",
+          "moduleName": "DomainModelTests",
+          "isOpen": true,
+          "declAttributes": [
+            "RawDocComment",
+            "ObjC"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "testConvertNeg",
+          "printedName": "testConvertNeg()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "c:@M@DomainModelTests@objc(cs)MoneyTests(im)testConvertNeg",
+          "mangledName": "$s16DomainModelTests05MoneyC0C14testConvertNegyyF",
+          "moduleName": "DomainModelTests",
+          "isOpen": true,
+          "declAttributes": [
+            "RawDocComment",
+            "ObjC"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "testAddNeg",
+          "printedName": "testAddNeg()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "c:@M@DomainModelTests@objc(cs)MoneyTests(im)testAddNeg",
+          "mangledName": "$s16DomainModelTests05MoneyC0C10testAddNegyyF",
+          "moduleName": "DomainModelTests",
+          "isOpen": true,
+          "declAttributes": [
+            "RawDocComment",
+            "ObjC"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "testNegAdd",
+          "printedName": "testNegAdd()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "c:@M@DomainModelTests@objc(cs)MoneyTests(im)testNegAdd",
+          "mangledName": "$s16DomainModelTests05MoneyC0C10testNegAddyyF",
+          "moduleName": "DomainModelTests",
+          "isOpen": true,
+          "declAttributes": [
+            "RawDocComment",
+            "ObjC"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "testUSDtoYuantoUSD",
+          "printedName": "testUSDtoYuantoUSD()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "c:@M@DomainModelTests@objc(cs)MoneyTests(im)testUSDtoYuantoUSD",
+          "mangledName": "$s16DomainModelTests05MoneyC0C18testUSDtoYuantoUSDyyF",
+          "moduleName": "DomainModelTests",
+          "isOpen": true,
+          "declAttributes": [
+            "RawDocComment",
             "ObjC"
           ],
           "funcSelfKind": "NonMutating"
@@ -1917,6 +2234,50 @@
         },
         {
           "kind": "Function",
+          "name": "testNoLN",
+          "printedName": "testNoLN()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "c:@M@DomainModelTests@objc(cs)PersonTests(im)testNoLN",
+          "mangledName": "$s16DomainModelTests06PersonC0C8testNoLNyyF",
+          "moduleName": "DomainModelTests",
+          "isOpen": true,
+          "declAttributes": [
+            "RawDocComment",
+            "ObjC"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "testNoFN",
+          "printedName": "testNoFN()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "c:@M@DomainModelTests@objc(cs)PersonTests(im)testNoFN",
+          "mangledName": "$s16DomainModelTests06PersonC0C8testNoFNyyF",
+          "moduleName": "DomainModelTests",
+          "isOpen": true,
+          "declAttributes": [
+            "RawDocComment",
+            "ObjC"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
           "name": "testAgeRestrictions",
           "printedName": "testAgeRestrictions()",
           "children": [
@@ -1938,6 +2299,50 @@
         },
         {
           "kind": "Function",
+          "name": "testFunctionNoFN",
+          "printedName": "testFunctionNoFN()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "c:@M@DomainModelTests@objc(cs)PersonTests(im)testFunctionNoFN",
+          "mangledName": "$s16DomainModelTests06PersonC0C16testFunctionNoFNyyF",
+          "moduleName": "DomainModelTests",
+          "isOpen": true,
+          "declAttributes": [
+            "RawDocComment",
+            "ObjC"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "testFunctionNoLN",
+          "printedName": "testFunctionNoLN()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "c:@M@DomainModelTests@objc(cs)PersonTests(im)testFunctionNoLN",
+          "mangledName": "$s16DomainModelTests06PersonC0C16testFunctionNoLNyyF",
+          "moduleName": "DomainModelTests",
+          "isOpen": true,
+          "declAttributes": [
+            "RawDocComment",
+            "ObjC"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
           "name": "testAdultAgeRestrictions",
           "printedName": "testAdultAgeRestrictions()",
           "children": [
@@ -1953,6 +2358,28 @@
           "moduleName": "DomainModelTests",
           "isOpen": true,
           "declAttributes": [
+            "ObjC"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "testAdultAgeEdgeCase",
+          "printedName": "testAdultAgeEdgeCase()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "c:@M@DomainModelTests@objc(cs)PersonTests(im)testAdultAgeEdgeCase",
+          "mangledName": "$s16DomainModelTests06PersonC0C20testAdultAgeEdgeCaseyyF",
+          "moduleName": "DomainModelTests",
+          "isOpen": true,
+          "declAttributes": [
+            "RawDocComment",
             "ObjC"
           ],
           "funcSelfKind": "NonMutating"
@@ -2379,6 +2806,50 @@
           "moduleName": "DomainModelTests",
           "isOpen": true,
           "declAttributes": [
+            "ObjC"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "testNonFamily",
+          "printedName": "testNonFamily()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "c:@M@DomainModelTests@objc(cs)FamilyTests(im)testNonFamily",
+          "mangledName": "$s16DomainModelTests06FamilyC0C07testNonD0yyF",
+          "moduleName": "DomainModelTests",
+          "isOpen": true,
+          "declAttributes": [
+            "RawDocComment",
+            "ObjC"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "testNonFamily2",
+          "printedName": "testNonFamily2()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "c:@M@DomainModelTests@objc(cs)FamilyTests(im)testNonFamily2",
+          "mangledName": "$s16DomainModelTests06FamilyC0C14testNonFamily2yyF",
+          "moduleName": "DomainModelTests",
+          "isOpen": true,
+          "declAttributes": [
+            "RawDocComment",
             "ObjC"
           ],
           "funcSelfKind": "NonMutating"
